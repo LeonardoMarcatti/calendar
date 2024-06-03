@@ -3,7 +3,7 @@ import { months } from "../../utils/utils";
 
 
 const Select = ({select}) => {
-   return <div className="col-2">
+   return <div className="col-2 mb-3">
       <select name="month" id="month" className="form-control" onChange={select}>
          <option value="0"  defaultValue="0">Selecione</option>
          {

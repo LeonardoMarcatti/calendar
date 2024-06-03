@@ -1,8 +1,8 @@
 import React from "react";
 import Day from './Day'
 import { weekDays } from "../utils/utils";
-const Month = ({data}) => {
 
+const Month = ({data}) => {
    const setEmptyDays = (val) => {
       const emptyDays = []
       for (let i = 0; i < val; i++) {
@@ -15,7 +15,7 @@ const Month = ({data}) => {
    const setDays = (val) => {
       const fullDays = []
       for (let i = 1; i < val.days; i++) {
-         fullDays.push(<Day key={`${val.month}${i}`} day={i}/>)
+         fullDays.push(<Day key={`${val.month}${i}`} day={i} id={`${val.month}${i}`}/>)
       }
       return fullDays
    }
